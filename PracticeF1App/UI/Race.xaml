@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeF1App.UI.Race"
+             Title="Race Schedule">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <ListView x:Name="RaceListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="LightGray" Padding="10" Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="{Binding Place}" FontSize="16" />
+                                    <Label Text="{Binding Date}" FontSize="14" />
+                                    <Label Text="{Binding Time}" FontSize="14" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

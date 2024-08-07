@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeF1App.MainPage"
+             BackgroundImageSource="f1background.jpg">
+
+    <StackLayout BackgroundColor="White">
+        <!-- Your content here -->
+        <Grid ColumnDefinitions="*,*,*"
+              RowDefinitions="Auto,*,*,*,*,*,*,*,*"
+              Padding="2.5"
+              RowSpacing="2.5">
+            <Label 
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                FontSize="Title"
+                Text="F1 PEDIA"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Image
+                Grid.Column="1"
+                Grid.Row="1"
+                Grid.RowSpan="3"
+                Source="f1background.jpg"
+                Aspect="AspectFit"
+                VerticalOptions="Center"
+                HorizontalOptions="End" />
+            <Button 
+                Grid.Column="0"
+                Grid.Row="4"
+                Grid.ColumnSpan="3"
+                Text="Race Schedule"
+                Clicked="RaceScheduleClicked"
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Blue"
+                TextColor="White"/>
+            <Button 
+                Grid.Column="0"
+                Grid.Row="5"
+                Grid.ColumnSpan="3"
+                Text="Race Results"
+                Clicked="RaceResultClicked"
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Blue"
+                TextColor="White"/>
+            <Button 
+                Grid.Column="0"
+                Grid.Row="6"
+                Grid.ColumnSpan="3"
+                Text="Team Info"
+                Clicked="TeamClicked"
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Blue"
+                TextColor="White"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
